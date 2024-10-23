@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hello world!</title>
-    </head>
-    <body>
-        <p>Body.</p>
-    </body>
+<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+    <h1>Example midi player</h1>
+<midi-player
+  src="https://magenta.github.io/magenta-js/music/demos/melody.mid"
+  sound-font visualizer="#myVisualizer">
+</midi-player>
+<midi-visualizer type="waterfall" id="myVisualizer"></midi-visualizer>
+</body>
 </html>
