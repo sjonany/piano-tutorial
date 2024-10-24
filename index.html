@@ -5,11 +5,27 @@
 <title>Page title 2</title>
 </head>
 <body>
-    <h1>Example midi player 2</h1>
+<h1>Song 1</h1>
 <midi-player
   src="https://magenta.github.io/magenta-js/music/demos/melody.mid"
-  sound-font visualizer="#myVisualizer">
+  sound-font visualizer=".song1_viz">
 </midi-player>
-<midi-visualizer type="waterfall" id="myVisualizer"></midi-visualizer>
+<midi-visualizer class="song1_viz" type="waterfall"></midi-visualizer>
+<midi-visualizer class="song1_viz" type="staff"></midi-visualizer>
+
+<h1>Song 2</h1>
+<midi-player
+  src="midi/zanarkand1.mid"
+  sound-font visualizer=".song2_viz">
+</midi-player>
+<midi-visualizer class="song2_viz" type="waterfall"></midi-visualizer>
+<midi-visualizer class="song2_viz" type="staff"></midi-visualizer>
+
+<footer class="site-footer">
+  We use
+    <a target="_blank" href="https://github.com/cifkao/html-midi-player">html_midi_player</a>
+    to visualize the MIDI files.
+    Code for this page can be found <a target="_blank" href="https://github.com/sjonany/piano-tutorial">here</a>.
+</footer>
 </body>
 </html>
