@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 <head>
 <title>Page title 2</title>
 </head>
@@ -15,6 +17,7 @@
 
 <h1>Song 2</h1>
 <midi-player
+  id="song2_player"
   src="midi/zanarkand1.mid"
   sound-font visualizer=".song2_viz">
 </midi-player>
