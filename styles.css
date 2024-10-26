@@ -1,0 +1,6 @@
+midi-visualizer svg rect.note {
+    opacity: 0.6;
+    stroke-width: 2;
+    fill: rgb(34, 173, 238);
+    stroke: rgb(0, 13, 85);
+}
