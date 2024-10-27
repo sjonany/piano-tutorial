@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
+<!--html-midi-player-->
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
+<!--magenta for note parsing-->
+<script src="https://cdn.jsdelivr.net/npm/@magenta/music@1.23.1"></script>
+<!--jquery-->
 <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 <link rel="stylesheet" href="styles.css">
@@ -23,7 +27,8 @@
   sound-font visualizer=".song2_viz">
 </midi-player>
 <midi-visualizer class="song2_viz" type="waterfall"></midi-visualizer>
-<midi-visualizer class="song2_viz" type="staff"></midi-visualizer>
+<midi-visualizer class="right-hand" id="right-hand-viz" type="staff"></midi-visualizer>
+<midi-visualizer class="left-hand" id="left-hand-viz" type="staff"></midi-visualizer>
 
 <footer class="site-footer">
   We use

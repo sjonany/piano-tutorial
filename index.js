@@ -4,6 +4,8 @@
 const HAS_FINISHED = "has_finished";
 
 $(document).ready(function() {
+    drawPianoStaff();
+
     $("midi-player").on("start", function(evt) {
         // Reset the scroll if we click start and the player has finished.
         if ($(this).data(HAS_FINISHED)) {
@@ -20,3 +22,37 @@ $(document).ready(function() {
         }
     });
 });
+
+// TODO: This works but I don't think magenta supports drawing a bass-treble sheet combo well -- they're disjoint.
+// Let's use another library.
+function drawPianoStaff() {
+    const midiUrl = "midi/zanarkand1.mid";
+    document.getElementById("myVisualizer");
+    getNoteSequence(midiUrl).then(noteSequence => {
+        const right_visualizer = document.getElementById("right-hand-viz");
+        rightNoteSequence = cloneNoteSequence(noteSequence);
+        rightNoteSequence.notes = noteSequence.notes.filter(note => note.pitch >= 60);
+        right_visualizer.noteSequence = rightNoteSequence;
+        const left_visualizer = document.getElementById("left-hand-viz");
+        leftNoteSequence = cloneNoteSequence(noteSequence);
+        leftNoteSequence.notes = noteSequence.notes.filter(note => note.pitch < 60);
+        left_visualizer.noteSequence = leftNoteSequence;
+    }).catch(error => {
+        console.error("Error fetching NoteSequence:", error);
+    });
+}
+
+async function getNoteSequence(midiUrl) {
+    const response = await fetch(midiUrl);
+    if (!response.ok) {
+        throw new Error("Failed to fetch MIDI file.");
+    }
+
+    const midiData = await response.arrayBuffer();
+    const noteSequence = mm.midiToSequenceProto(midiData);
+    return noteSequence;
+}
+
+function cloneNoteSequence(noteSequence) {
+    return JSON.parse(JSON.stringify(noteSequence));
+}
