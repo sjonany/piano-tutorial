@@ -26,7 +26,7 @@ $(document).ready(function() {
 // TODO: This works but I don't think magenta supports drawing a bass-treble sheet combo well -- they're disjoint.
 // Let's use another library.
 function drawPianoStaff() {
-    const midiUrl = "midi/zanarkand1.mid";
+    const midiUrl = "midi/Fodland_winds.mid";
     document.getElementById("myVisualizer");
     getNoteSequence(midiUrl).then(noteSequence => {
         const right_visualizer = document.getElementById("right-hand-viz");
