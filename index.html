@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+
+<!--dependencies START-->
+<!--alpine js for navigation-->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <!--html-midi-player-->
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
 <!--magenta for note parsing-->
@@ -8,23 +12,82 @@
 <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 <link rel="stylesheet" href="styles.css">
+<!--dependencies END-->
+
 <head>
 <title>Arpeggio Tutorial</title>
 </head>
+
 <body>
-<h1>1-5-1</h1>
-<midi-player
-  id="song2_player"
-  src="midi/styxhelix_151.mid"
-  sound-font visualizer=".song2_viz">
-</midi-player>
-<midi-visualizer class="song2_viz" type="waterfall"></midi-visualizer>
-<iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21423823/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe><span><a href="https://musescore.com/user/36979176/scores/21423823/s/WXlyO5" target="_blank">Styx helix – arpeggio 151</a> by <a href="https://musescore.com/user/36979176">mimimi1625</a></span>
-<footer class="site-footer">
-  We use
-    <a target="_blank" href="https://github.com/cifkao/html-midi-player">html_midi_player</a>
-    to visualize the MIDI files.
-    Code for this page can be found <a target="_blank" href="https://github.com/sjonany/piano-tutorial">here</a>.
-</footer>
+  <div class="pagination-container" x-data="{ currentPage: 1, totalPages: 3 }">
+
+    <!-- Section 1 -->
+    <div class="section" x-show="currentPage === 1">
+      <p class="section-header">Section 1: 1-5-1</p>
+      <p class="section-content">Here's the lesson content</p>
+
+
+      <midi-player
+        src="midi/styxhelix_151.mid"
+        sound-font visualizer=".styxhelix_151_viz">
+      </midi-player>
+      <midi-visualizer class="styxhelix_151_viz" type="waterfall" 
+      src="midi/styxhelix_151.mid"></midi-visualizer>
+      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21423823/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+      <a class="credit" href="https://musescore.com/user/36979176/scores/21423823/s/WXlyO5" target="_blank">
+        Styx helix – arpeggio 151</a>
+
+      <p class="practice-header">Let’s practice!</p>
+      <ol class="section-content">
+        <li>Do this for one song</li>
+        <li>Do this for two songs</li>
+        <li>Repeat until comfortable</li>
+      </ol>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section" x-show="currentPage === 2">
+      <p class="section-header">Section 2: 1-5-1</p>
+      <midi-player
+        src="midi/styxhelix_151.mid"
+        sound-font visualizer=".styxhelix_151_viz">
+      </midi-player>
+      <midi-visualizer class="styxhelix_151_viz" type="waterfall"></midi-visualizer>
+      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21423823/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+      <a class="credit" href="https://musescore.com/user/36979176/scores/21423823/s/WXlyO5" target="_blank">
+        Styx helix – arpeggio 151</a>
+    </div>
+
+
+    <!-- Section 3 -->
+    <div class="section" x-show="currentPage === 3">
+      <p class="section-header">Section 3: 1-5-1</p>
+      <midi-player
+        src="midi/styxhelix_151.mid"
+        sound-font visualizer=".styxhelix_151_viz">
+      </midi-player>
+      <midi-visualizer class="styxhelix_151_viz" type="waterfall"></midi-visualizer>
+      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21423823/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+      <a class="credit" href="https://musescore.com/user/36979176/scores/21423823/s/WXlyO5" target="_blank">
+        Styx helix – arpeggio 151</a>
+    </div>
+  
+    <div class="navigation">
+      <!-- Navigation buttons using Alpine.js bindings -->
+      <button x-bind:disabled="currentPage === 1" @click="currentPage--">← Previous</button>
+      <span class="page-number" x-text="`${currentPage} / ${totalPages}`"></span>
+      <button x-bind:disabled="currentPage === totalPages" @click="currentPage++">Next →</button>
+    </div>
+    <div class="site-footer">
+       We use
+         <a target="_blank" href="https://github.com/cifkao/html-midi-player">html_midi_player</a>
+         to visualize the MIDI files.
+         Code for this page can be found <a target="_blank" href="https://github.com/sjonany/piano-tutorial">here</a>.
+    </div>
+  </div>
+
 </body>
+
+
+
 </html>
