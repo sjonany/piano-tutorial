@@ -5,17 +5,19 @@
 <!--alpine js for navigation-->
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <!--html-midi-player-->
-<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
+<script
+  src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
 <!--magenta for note parsing-->
 <script src="https://cdn.jsdelivr.net/npm/@magenta/music@1.23.1"></script>
 <!--jquery-->
-<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 <link rel="stylesheet" href="styles.css">
 <!--dependencies END-->
 
 <head>
-<title>Arpeggio Tutorial</title>
+  <title>Arpeggio Tutorial</title>
 </head>
 
 <body>
@@ -26,19 +28,24 @@
       <p class="section-content">
         This is a short tutorial on how you can create delicious arpeggio covers for your favorite songs.
         I originally wrote this for my brother and he likes anime music, so I'm using that as the recurring song :D
-        <br/>
-        <br/>
+        <br />
+        <br />
         Here's the end result:
       </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Glx4YThynHA?si=DI2wCguXgdfjx0lz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Glx4YThynHA?si=DI2wCguXgdfjx0lz"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <!-- Section: Level 1. 1-5-1 -->
     <div class="section" x-show="currentPage === 2">
       <p class="section-header">Level 1. 1-5-1</p>
       <p class="section-content">
-        A basic starting pattern is to play the first (also known as root) and fifth note of the scale of the chord you are playing.
-        For example, for the chord C, the corresponding scale is C major, and the first note is C, third note is E, and fifth note is G.
+        A basic starting pattern is to play the first (also known as root) and fifth note of the scale of the chord you
+        are playing.
+        For example, for the chord C, the corresponding scale is C major, and the first note is C, third note is E, and
+        fifth note is G.
       </p>
       <p class="section-header">Sheet</p>
       <p class="section-content">
@@ -46,26 +53,29 @@
         Do you see that all the left hand is doing is just the 1-5-1 pattern?
       </p>
 
-      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21423823/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21423823/embed" frameborder="0"
+        allowfullscreen allow="autoplay; fullscreen"></iframe>
       <a class="credit" href="https://musescore.com/user/36979176/scores/21423823/s/WXlyO5" target="_blank">
         Styx helix – arpeggio 151</a>
 
       <p class="section-header">Piano roll</p>
       <p class="section-content">Here's the equivalent piano roll version</p>
-      <midi-player
-        src="midi/styxhelix_151.mid"
-        sound-font visualizer=".styxhelix_151_viz">
+      <midi-player src="midi/styxhelix_151.mid" sound-font visualizer=".styxhelix_151_viz">
       </midi-player>
-      <midi-visualizer class="styxhelix_151_viz" type="waterfall" 
-      src="midi/styxhelix_151.mid"></midi-visualizer>
+      <midi-visualizer class="styxhelix_151_viz" type="waterfall" src="midi/styxhelix_151.mid"></midi-visualizer>
 
       <p class="section-header">Let’s practice!</p>
-      <p class="section-content">The lessons build up on top of each other, so it's important to master each before going to the next. Here are some suggested practice goals:</p>
-      <p class="section-content"><span class="practice-header">1. [Left]</span> Practice just the left hand in isolation. Make sure you know the 1's and 5's of each chord.</p>
-      <p class="section-content"><span class="practice-header">2. [Left and right]</span> Practice with the right hand. Pay attention to which left and right hand notes have to be played at the same time.</p>
-      <p class="section-content"><span class="practice-header">3. [In tempo]</span> Practice against the musescore recording, and make sure you can follow the same tempo without any mistakes.
+      <p class="section-content">The lessons build up on top of each other, so it's important to master each before
+        going to the next. Here are some suggested practice goals:</p>
+      <p class="section-content"><span class="practice-header">1. [Left]</span> Practice just the left hand in
+        isolation. Make sure you know the 1's and 5's of each chord.</p>
+      <p class="section-content"><span class="practice-header">2. [Left and right]</span> Practice with the right hand.
+        Pay attention to which left and right hand notes have to be played at the same time.</p>
+      <p class="section-content"><span class="practice-header">3. [In tempo]</span> Practice against the musescore
+        recording, and make sure you can follow the same tempo without any mistakes.
         In the "Sheet" section, the musescore widget allows looping. Set "end measure" to 4.</p>
-      <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another song.
+      <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another
+        song.
         Pick one song that you know the chords of. If you don't, you can use
         <a href="https://tabs.ultimate-guitar.com/tab/misc-computer-games/final-fantasy-x-to-zanarkand-chords-1505174">
           ultimate guitar</a>
@@ -77,32 +87,34 @@
     <div class="section" x-show="currentPage === 3">
       <p class="section-header">Level 2. Continuous 151</p>
       <p class="section-content">
-        We can make our playing be more continuous by also descending after we reach the highest note. The pattern is now 1515.
+        We can make our playing be more continuous by also descending after we reach the highest note. The pattern is
+        now 1515.
       </p>
       <p class="section-header">Sheet</p>
       <p class="section-content">
         Take a listen here. Note how we play the fifth note of each scale instead of resting.
       </p>
-      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21429670/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21429670/embed" frameborder="0"
+        allowfullscreen allow="autoplay; fullscreen"></iframe>
       <a class="credit" href="https://musescore.com/user/36979176/scores/21429670" target="_blank">
         Styx helix – arpeggio 1515</a>
 
       <p class="section-header">Piano roll</p>
       <p class="section-content">Here's the equivalent piano roll version</p>
-      <midi-player
-        src="midi/styxhelix_1515.mid"
-        sound-font visualizer=".styxhelix_1515_viz">
+      <midi-player src="midi/styxhelix_1515.mid" sound-font visualizer=".styxhelix_1515_viz">
       </midi-player>
-      <midi-visualizer class="styxhelix_1515_viz" type="waterfall" 
-      src="midi/styxhelix_1515.mid"></midi-visualizer>
+      <midi-visualizer class="styxhelix_1515_viz" type="waterfall" src="midi/styxhelix_1515.mid"></midi-visualizer>
 
       <p class="section-header">Let’s practice!</p>
-      <p class="section-content"><span class="practice-header">1. [Left]</span> Practice just the left hand in isolation. Make sure you can play the notes continuously.</p>
-      <p class="section-content"><span class="practice-header">2. [Left and right]</span> Practice with the right hand. Pay attention to which left and right hand notes have to be played at the same time.</p>
+      <p class="section-content"><span class="practice-header">1. [Left]</span> Practice just the left hand in
+        isolation. Make sure you can play the notes continuously.</p>
+      <p class="section-content"><span class="practice-header">2. [Left and right]</span> Practice with the right hand.
+        Pay attention to which left and right hand notes have to be played at the same time.</p>
       <p class="section-content"><span class="practice-header">3. [In tempo]</span>
         Practice against the musescore recording, and make sure you can follow the same tempo without any mistakes.
       </p>
-      <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another song.</p>
+      <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another
+        song.</p>
     </div>
 
     <!-- Section: Level 3. Twice as fast -->
@@ -118,147 +130,229 @@
         Take a listen here. Doesn't that sound much cooler?
         Do you also see that for each chord, they all follow the same 15135131 pattern?
       </p>
-      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21429448/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21429448/embed" frameborder="0"
+        allowfullscreen allow="autoplay; fullscreen"></iframe>
       <a class="credit" href="https://musescore.com/user/36979176/scores/21429448" target="_blank">
         Styx helix – arpeggio twice as fast</a>
 
       <p class="section-header">Piano roll</p>
       <p class="section-content">Here's the equivalent piano roll version</p>
-      <midi-player
-        src="midi/styxhelix_twicefast.mid"
-        sound-font visualizer=".styxhelix_twicefast_viz">
+      <midi-player src="midi/styxhelix_twicefast.mid" sound-font visualizer=".styxhelix_twicefast_viz">
       </midi-player>
-      <midi-visualizer class="styxhelix_twicefast_viz" type="waterfall" 
-      src="midi/styxhelix_twicefast.mid"></midi-visualizer>
+      <midi-visualizer class="styxhelix_twicefast_viz" type="waterfall"
+        src="midi/styxhelix_twicefast.mid"></midi-visualizer>
 
-      <p class="section-content"> Watch this video so you know how to move your fingers (but skip the first octave's third note).</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/qdr-O7rayLI?si=yQaaeHFqyw0BHSZU&amp;start=79" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="section-content"> Watch this video so you know how to move your fingers (but skip the first octave's
+        third note).</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qdr-O7rayLI?si=yQaaeHFqyw0BHSZU&amp;start=79"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
       <p class="section-header">Let’s practice!</p>
       <p class="section-content">
         WARNING: There is a huge jump in difficulty.
-        If this is your first time, I recommend starting with a slow tempo (e.g. 30 BPM, so you play 1 note per second), and each day increasing by 10 BPM.</p>
-      <p class="section-content"><span class="practice-header">1. [Left]</span> Practice just the left hand in isolation. Make sure you can play the notes continuously.</p>
-      <p class="section-content"><span class="practice-header">2. [Left and right]</span> Practice with the right hand. Pay attention to which left and right hand notes have to be played at the same time.</p>
+        If this is your first time, I recommend starting with a slow tempo (e.g. 30 BPM, so you play 1 note per second),
+        and each day increasing by 10 BPM.</p>
+      <p class="section-content"><span class="practice-header">1. [Left]</span> Practice just the left hand in
+        isolation. Make sure you can play the notes continuously.</p>
+      <p class="section-content"><span class="practice-header">2. [Left and right]</span> Practice with the right hand.
+        Pay attention to which left and right hand notes have to be played at the same time.</p>
       <p class="section-content"><span class="practice-header">3. [In tempo]</span>
         Practice against the musescore recording, and make sure you can follow the same tempo without any mistakes.
       </p>
-      <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another song.</p>
+      <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another
+        song.</p>
     </div>
-  
-   <!-- Section: Level 4. Beyond 135 -->
-   <div class="section" x-show="currentPage === 5">
-    <p class="section-header"> Level 4. Beyond 135</p>
-    <p class="section-content">
-      We can use more notes beyond the 135 of each scale. Some common ones that sound good are the 2, 6 and 7.
-      Here's an example where we also use the 2. 
-    </p>
-    <p class="section-header">Sheet</p>
-    <p class="section-content">
-      The pattern used here is 15123532. Doesn't the 123 walking movement sound good here?
-    </p>
-    <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21429772/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-    <a class="credit" href="https://musescore.com/user/36979176/scores/21429772" target="_blank">
-      Styx helix – arpeggio 15123532</a>
 
-    <p class="section-header">Piano roll</p>
-    <p class="section-content">Here's the equivalent piano roll version</p>
-    <midi-player
-      src="midi/styxhelix_1235.mid"
-      sound-font visualizer=".styxhelix_1235_viz">
-    </midi-player>
-    <midi-visualizer class="styxhelix_1235_viz" type="waterfall" 
-    src="midi/styxhelix_1235.mid"></midi-visualizer>
+    <!-- Section: Level 4. Beyond 135 -->
+    <div class="section" x-show="currentPage === 5">
+      <p class="section-header"> Level 4. Beyond 135</p>
+      <p class="section-content">
+        We can use more notes beyond the 135 of each scale. Some common ones that sound good are the 2, 6 and 7.
+        Here's an example where we also use the 2.
+      </p>
+      <p class="section-header">Sheet</p>
+      <p class="section-content">
+        The pattern used here is 15123532. Doesn't the 123 walking movement sound good here?
+      </p>
+      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21429772/embed" frameborder="0"
+        allowfullscreen allow="autoplay; fullscreen"></iframe>
+      <a class="credit" href="https://musescore.com/user/36979176/scores/21429772" target="_blank">
+        Styx helix – arpeggio 15123532</a>
 
-    <p class="section-header">Let’s practice!</p>
-    <p class="section-content">
-    <p class="section-content"><span class="practice-header">1. [Left]</span> Practice just the left hand in isolation. Make sure you can play the notes continuously.</p>
-    <p class="section-content"><span class="practice-header">2. [Left and right]</span> Practice with the right hand. Pay attention to which left and right hand notes have to be played at the same time.</p>
-    <p class="section-content"><span class="practice-header">3. [In tempo]</span>
-      Practice against the musescore recording, and make sure you can follow the same tempo without any mistakes.
-    </p>
-    <p class="section-content"><span class="practice-header">4. [Another pattern]</span> Try other patterns! Here is another one: 15123575, or you can create your own too.</p>
-    <p class="section-content"><span class="practice-header">5. [Another song]</span> Repeat the above to another song.</p>
-  </div>
+      <p class="section-header">Piano roll</p>
+      <p class="section-content">Here's the equivalent piano roll version</p>
+      <midi-player src="midi/styxhelix_1235.mid" sound-font visualizer=".styxhelix_1235_viz">
+      </midi-player>
+      <midi-visualizer class="styxhelix_1235_viz" type="waterfall" src="midi/styxhelix_1235.mid"></midi-visualizer>
 
-  <!-- Section: Level 5. Rhythm gaps -->
-  <div class="section" x-show="currentPage === 6">
-    <p class="section-header"> Level 5. Rhythm gaps</p>
-    <p class="section-content">
-      You can leave out some notes in your left hand if your right hand is playing a melody, and your playing will still sound continuous.
-      Heck, you can even play different patterns each time! 
-    </p>
-    <p class="section-header">Sheet</p>
-    <p class="section-content">
-      Note how leaving some space on the arpeggio when the right hand is playing can make the piece sound more interesting.
-      You still want to play the bass note regardless of the right hand to establish the chord though.
-    </p>
-    <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21429985/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-    <a class="credit" href="https://musescore.com/user/36979176/scores/21429985" target="_blank">
-      Styx helix – arpeggio rhythm gaps</a>
+      <p class="section-header">Let’s practice!</p>
+      <p class="section-content">
+      <p class="section-content"><span class="practice-header">1. [Left]</span> Practice just the left hand in
+        isolation. Make sure you can play the notes continuously.</p>
+      <p class="section-content"><span class="practice-header">2. [Left and right]</span> Practice with the right hand.
+        Pay attention to which left and right hand notes have to be played at the same time.</p>
+      <p class="section-content"><span class="practice-header">3. [In tempo]</span>
+        Practice against the musescore recording, and make sure you can follow the same tempo without any mistakes.
+      </p>
+      <p class="section-content"><span class="practice-header">4. [Another pattern]</span> Try other patterns! Here is
+        another one: 15123575, or you can create your own too.</p>
+      <p class="section-content"><span class="practice-header">5. [Another song]</span> Repeat the above to another
+        song.</p>
+    </div>
 
-    <p class="section-header">Piano roll</p>
-    <p class="section-content">Here's the equivalent piano roll version</p>
-    <midi-player
-      src="midi/styxhelix_rhythmgaps.mid"
-      sound-font visualizer=".styxhelix_rhythmgaps_viz">
-    </midi-player>
-    <midi-visualizer class="styxhelix_rhythmgaps_viz" type="waterfall" 
-    src="midi/styxhelix_rhythmgaps.mid"></midi-visualizer>
+    <!-- Section: Level 5. Rhythm gaps -->
+    <div class="section" x-show="currentPage === 6">
+      <p class="section-header"> Level 5. Rhythm gaps</p>
+      <p class="section-content">
+        You can leave out some notes in your left hand if your right hand is playing a melody, and your playing will
+        still sound continuous.
+        Heck, you can even play different patterns each time!
+      </p>
+      <p class="section-header">Sheet</p>
+      <p class="section-content">
+        Note how leaving some space on the arpeggio when the right hand is playing can make the piece sound more
+        interesting.
+        You still want to play the bass note regardless of the right hand to establish the chord though.
+      </p>
+      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21429985/embed" frameborder="0"
+        allowfullscreen allow="autoplay; fullscreen"></iframe>
+      <a class="credit" href="https://musescore.com/user/36979176/scores/21429985" target="_blank">
+        Styx helix – arpeggio rhythm gaps</a>
 
-    <p class="section-header">Let’s practice!</p>
-    <p class="section-content">
-    <p class="section-content"><span class="practice-header">1. [Left and right]</span> Practice with both hands. Pay close attention to which notes on both hands are played at the same time. </p>
-    <p class="section-content"><span class="practice-header">2. [New pattern]</span>
-      Sketch up a new pattern, while keeping the same rhtyhmic gaps. Practice that.
-    </p>
-    <p class="section-content"><span class="practice-header">3. [Improvise]</span> Keep looping this chorus, and see if you can pick gaps and notes for the left hand on the fly.
-      To be able to improvise, you must instinctively be able to identify the notes of the chords.
-      One way to get better at this is to practice chord inversions -- go find youtube tutorials on "chord inversions" and practice them first as a precursor step if you haven't done this before.
-    </p>
-    <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another song.</p>
-  </div>
+      <p class="section-header">Piano roll</p>
+      <p class="section-content">Here's the equivalent piano roll version</p>
+      <midi-player src="midi/styxhelix_rhythmgaps.mid" sound-font visualizer=".styxhelix_rhythmgaps_viz">
+      </midi-player>
+      <midi-visualizer class="styxhelix_rhythmgaps_viz" type="waterfall"
+        src="midi/styxhelix_rhythmgaps.mid"></midi-visualizer>
 
+      <p class="section-header">Let’s practice!</p>
+      <p class="section-content">
+      <p class="section-content"><span class="practice-header">1. [Left and right]</span> Practice with both hands. Pay
+        close attention to which notes on both hands are played at the same time. </p>
+      <p class="section-content"><span class="practice-header">2. [New pattern]</span>
+        Sketch up a new pattern, while keeping the same rhtyhmic gaps. Practice that.
+      </p>
+      <p class="section-content"><span class="practice-header">3. [Improvise]</span> Keep looping this chorus, and see
+        if you can pick gaps and notes for the left hand on the fly.
+        To be able to improvise, you must instinctively be able to identify the notes of the chords.
+        One way to get better at this is to practice chord inversions -- go find youtube tutorials on "chord inversions"
+        and practice them first as a precursor step if you haven't done this before.
+      </p>
+      <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another
+        song.</p>
+    </div>
 
-  <!-- Section: Level 6. Soft and sad -->
-  <div class="section" x-show="currentPage === 7">
-    <p class="section-header"> Level 6. Soft and sad</p>
-    <p class="section-content">
-      The arpeggio can also be played in the higher register for a softer and sadder sound.
-      I used this trick for the transition here.
-    </p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Glx4YThynHA?si=tPgxEAnhA4BaGq4U&amp;start=23" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <p class="section-header">Sheet</p>
-    <p class="section-content">
-      Since I'm playing at a higher register and my fingers are more scrunched up, I use fingerings that are closer together like 1357 or 1356.
-    </p>
-    <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21444688/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-    <a class="credit" href="https://musescore.com/user/36979176/scores/21444688" target="_blank">
-      Styx helix – arpeggio soft</a>
+    <!-- Section: Level 6. Soft and sad -->
+    <div class="section" x-show="currentPage === 7">
+      <p class="section-header"> Level 6. Soft and sad</p>
+      <p class="section-content">
+        The arpeggio can also be played in the higher register for a softer and sadder sound.
+        I used this trick for the transition here.
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Glx4YThynHA?si=tPgxEAnhA4BaGq4U&amp;start=23"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="section-header">Sheet</p>
+      <p class="section-content">
+        Since I'm playing at a higher register and my fingers are more scrunched up, I use fingerings that are closer
+        together like 1357 or 1356.
+      </p>
+      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21444688/embed" frameborder="0"
+        allowfullscreen allow="autoplay; fullscreen"></iframe>
+      <a class="credit" href="https://musescore.com/user/36979176/scores/21444688" target="_blank">
+        Styx helix – arpeggio soft</a>
 
-    <p class="section-header">Piano roll</p>
-    <p class="section-content">Here's the equivalent piano roll version</p>
-    <midi-player
-      src="midi/styxhelix_soft.mid"
-      sound-font visualizer=".styxhelix_soft_viz">
-    </midi-player>
-    <midi-visualizer class="styxhelix_soft_viz" type="waterfall" 
-    src="midi/styxhelix_soft.mid"></midi-visualizer>
+      <p class="section-header">Piano roll</p>
+      <p class="section-content">Here's the equivalent piano roll version</p>
+      <midi-player src="midi/styxhelix_soft.mid" sound-font visualizer=".styxhelix_soft_viz">
+      </midi-player>
+      <midi-visualizer class="styxhelix_soft_viz" type="waterfall" src="midi/styxhelix_soft.mid"></midi-visualizer>
 
-    <p class="section-header">Let’s practice!</p>
-    <p class="section-content">
-    <p class="section-content"><span class="practice-header">1. [Left and right]</span> Practice with both hands. Pay close attention to which notes on both hands are played at the same time. </p>
-    <p class="section-content"><span class="practice-header">2. [New pattern]</span>
-      Repeat the chorus twice, but for the first iteration, use the previous section where you start in a lower register and do a 151.
-      For the second iteration, do the soft, higher register version as per this section.
-      Tada! You just made an arrangement!
-    </p>
-    <p class="section-content"><span class="practice-header">3. [Connect]</span>
-      Sketch up a new pattern, while keeping the same rhtyhmic gaps. Practice that.
-    </p>
-    <p class="section-content"><span class="practice-header">4. [Improvise]</span> Improvise the notes on the fly. Switch between lower and higher register at each chorus.</p>
-    <p class="section-content"><span class="practice-header">5. [Another song]</span> Repeat the above to another song.</p>
-  </div>
+      <p class="section-header">Let’s practice!</p>
+      <p class="section-content">
+      <p class="section-content"><span class="practice-header">1. [Left and right]</span> Practice with both hands. Pay
+        close attention to which notes on both hands are played at the same time. </p>
+      <p class="section-content"><span class="practice-header">2. [New pattern]</span>
+        Repeat the chorus twice, but for the first iteration, use the previous section where you start in a lower
+        register and do a 151.
+        For the second iteration, do the soft, higher register version as per this section.
+        Tada! You just made an arrangement!
+      </p>
+      <p class="section-content"><span class="practice-header">3. [Connect]</span>
+        Sketch up a new pattern, while keeping the same rhtyhmic gaps. Practice that.
+      </p>
+      <p class="section-content"><span class="practice-header">4. [Improvise]</span> Improvise the notes on the fly.
+        Switch between lower and higher register at each chorus.</p>
+      <p class="section-content"><span class="practice-header">5. [Another song]</span> Repeat the above to another
+        song.</p>
+    </div>
+
+    <!-- Section: Level 6. Soft and sad -->
+    <div class="section" x-show="currentPage === 7">
+      <p class="section-header"> Level 6. Soft and sad</p>
+      <p class="section-content">
+        The arpeggio can also be played in the higher register for a softer and sadder sound.
+        I used this trick for the transition here.
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Glx4YThynHA?si=tPgxEAnhA4BaGq4U&amp;start=23"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="section-header">Sheet</p>
+      <p class="section-content">
+        Since I'm playing at a higher register and my fingers are more scrunched up, I use fingerings that are closer
+        together like 1357 or 1356.
+      </p>
+      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21444688/embed" frameborder="0"
+        allowfullscreen allow="autoplay; fullscreen"></iframe>
+      <a class="credit" href="https://musescore.com/user/36979176/scores/21444688" target="_blank">
+        Styx helix – arpeggio soft</a>
+
+      <p class="section-header">Piano roll</p>
+      <p class="section-content">Here's the equivalent piano roll version</p>
+      <midi-player src="midi/styxhelix_soft.mid" sound-font visualizer=".styxhelix_soft_viz">
+      </midi-player>
+      <midi-visualizer class="styxhelix_soft_viz" type="waterfall" src="midi/styxhelix_soft.mid"></midi-visualizer>
+
+      <p class="section-header">Let’s practice!</p>
+      <p class="section-content">
+      <p class="section-content"><span class="practice-header">1. [Left and right]</span> Practice with both hands. Pay
+        close attention to which notes on both hands are played at the same time. </p>
+      <p class="section-content"><span class="practice-header">2. [New pattern]</span>
+        Repeat the chorus twice, but for the first iteration, use the previous section where you start in a lower
+        register and do a 151.
+        For the second iteration, do the soft, higher register version as per this section.
+        Tada! You just made an arrangement!
+      </p>
+      <p class="section-content"><span class="practice-header">3. [Connect]</span>
+        Sketch up a new pattern, while keeping the same rhtyhmic gaps. Practice that.
+      </p>
+      <p class="section-content"><span class="practice-header">4. [Improvise]</span> Improvise the notes on the fly.
+        Switch between lower and higher register at each chorus.</p>
+      <p class="section-content"><span class="practice-header">5. [Another song]</span> Repeat the above to another
+        song.</p>
+    </div>
+
+    <!-- Section: ending -->
+    <div class="section" x-show="currentPage === 8">
+      <p class="section-header">Conclusion</p>
+      <p class="section-content">
+        That's all I have for you! I highly recommend that you create an arrangement based on the lessons we discuss here
+        and publish it either on youtube or instagram. If you do, feel free to ping me on github so I can link it, or 
+        even reply to the youtube video below as a comment.
+        <br/>
+        <br/>
+        Keep practicing!
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Glx4YThynHA?si=tPgxEAnhA4BaGq4U&amp"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
     <div class="navigation">
       <!-- Navigation buttons using Alpine.js bindings -->
@@ -267,13 +361,12 @@
       <button x-bind:disabled="currentPage === totalPages" @click="changePage(currentPage+1)">Next →</button>
     </div>
     <div class="site-footer">
-       We use
-         <a target="_blank" href="https://github.com/cifkao/html-midi-player">html_midi_player</a>
-         to visualize the MIDI files.
-         Code for this page can be found <a target="_blank" href="https://github.com/sjonany/piano-tutorial">here</a>.
+      We use
+      <a target="_blank" href="https://github.com/cifkao/html-midi-player">html_midi_player</a>
+      to visualize the MIDI files.
+      Code for this page can be found <a target="_blank" href="https://github.com/sjonany/piano-tutorial">here</a>.
     </div>
   </div>
-
 </body>
 
 

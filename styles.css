@@ -28,11 +28,12 @@ midi-visualizer {
 
 body, html {
   width: 100%; /* Ensure the body and html take full width */
-  min-height: 100vh;
+  height: 100%;
   overflow: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   background-color: #1e1e2e;
   color: #f3f3f3;
 }
@@ -41,11 +42,10 @@ body, html {
     width: 100%; /* Full width */
     max-width: 800px; /* Optional max width for larger screens */
     height: auto;
-    overflow: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     background-color: #1e1e2e;
     color: #000000; /* Default text color, inherited by play button*/
