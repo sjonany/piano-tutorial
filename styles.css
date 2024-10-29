@@ -9,6 +9,15 @@ midi-visualizer svg rect.note {
     stroke: rgb(0, 13, 85);
 }
 
+midi-visualizer {
+    border: 2px solid #4a4ac1; /* Border color and width */
+    border-radius: 10px; /* Rounded edges */
+    overflow: hidden; /* Prevent overflow of content */
+    margin: 20px 0; /* Space above and below the visualizer */
+    padding: 10px; /* Padding inside the visualizer */
+    width: 100%; /* Full width for the visualizer */
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,10 +26,12 @@ midi-visualizer svg rect.note {
   }
 
 body, html {
+  width: 100%; /* Ensure the body and html take full width */
+  min-height: 100vh;
+  overflow: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   background-color: #1e1e2e;
   color: #f3f3f3;
 }
@@ -29,6 +40,7 @@ body, html {
     width: 100%; /* Full width */
     max-width: 800px; /* Optional max width for larger screens */
     height: auto;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
