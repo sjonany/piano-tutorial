@@ -16,6 +16,7 @@ midi-visualizer {
     margin: 20px 0; /* Space above and below the visualizer */
     padding: 10px; /* Padding inside the visualizer */
     width: 100%; /* Full width for the visualizer */
+    overflow: auto;
 }
 
 * {
