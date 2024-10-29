@@ -3,7 +3,7 @@
 // This is a workaround for https://github.com/cifkao/html-midi-player/issues/23
 const HAS_FINISHED = "has_finished";
 // The total number of pages.
-const NUM_PAGES = 6;
+const NUM_PAGES = 7;
 
 $(document).ready(function() {
     $("midi-player").on("start", function(evt) {
