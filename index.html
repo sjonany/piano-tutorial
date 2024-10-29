@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <div class="pagination-container" x-data="{ currentPage: 1, totalPages: 4 }">
+  <div class="pagination-container" x-data="pagination()" @keydown.window="handleKeydown($event)">
     <!-- Section 1 -->
     <div class="section" x-show="currentPage === 1">
       <p class="section-header">Arpeggio tutorial</p>
@@ -125,9 +125,9 @@
   
     <div class="navigation">
       <!-- Navigation buttons using Alpine.js bindings -->
-      <button x-bind:disabled="currentPage === 1" @click="currentPage--">← Previous</button>
+      <button x-bind:disabled="currentPage === 1" @click="changePage(currentPage-1)">← Previous</button>
       <span class="page-number" x-text="`${currentPage} / ${totalPages}`"></span>
-      <button x-bind:disabled="currentPage === totalPages" @click="currentPage++">Next →</button>
+      <button x-bind:disabled="currentPage === totalPages" @click="changePage(currentPage+1)">Next →</button>
     </div>
     <div class="site-footer">
        We use
