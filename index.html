@@ -20,7 +20,7 @@
 
 <body>
   <div class="pagination-container" x-data="pagination()" @keydown.window="handleKeydown($event)">
-    <!-- Section 1 -->
+    <!-- Section: Intro -->
     <div class="section" x-show="currentPage === 1">
       <p class="section-header">Arpeggio tutorial</p>
       <p class="section-content">
@@ -28,13 +28,12 @@
         I originally wrote this for my brother and he likes anime music, so I'm using that as the recurring song :D
         <br/>
         <br/>
-        Here's the end product:
-        TODO:
+        Here's the end result:
       </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dY3wO4u5mdA?si=Sp3pphmGALKjj2gc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Glx4YThynHA?si=DI2wCguXgdfjx0lz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-    <!-- Section 2 -->
+    <!-- Section: Level 1. 1-5-1 -->
     <div class="section" x-show="currentPage === 2">
       <p class="section-header">Level 1. 1-5-1</p>
       <p class="section-content">
@@ -64,64 +63,49 @@
       <p class="section-content">The lessons build up on top of each other, so it's important to master each before going to the next. Here are some suggested practice goals:</p>
       <p class="section-content"><span class="practice-header">1. [Left]</span> Practice just the left hand in isolation. Make sure you know the 1's and 5's of each chord.</p>
       <p class="section-content"><span class="practice-header">2. [Left and right]</span> Practice with the right hand. Pay attention to which left and right hand notes have to be played at the same time.</p>
-      <p class="section-content"><span class="practice-header">3. [In tempo]</span> Practice against the muse score recording, and make sure you can follow the same tempo without any mistakes.
+      <p class="section-content"><span class="practice-header">3. [In tempo]</span> Practice against the musescore recording, and make sure you can follow the same tempo without any mistakes.
         In the "Sheet" section, the musescore widget allows looping. Set "end measure" to 4.</p>
       <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another song.
-        Pick one song that you know the chords of (or if you don't, you can use
+        Pick one song that you know the chords of. If you don't, you can use
         <a href="https://tabs.ultimate-guitar.com/tab/misc-computer-games/final-fantasy-x-to-zanarkand-chords-1505174">
           ultimate guitar</a>
         and see if you can play the song using this pattern.
       </p>
     </div>
 
-
-    <!-- Section 1 -->
+    <!-- Section: Level 2. Continuous 151 -->
     <div class="section" x-show="currentPage === 3">
-      <p class="section-header">Section 1: 1-5-1</p>
-      <p class="section-content">Here's the lesson content</p>
+      <p class="section-header">Level 2. Continuous 151</p>
+      <p class="section-content">
+        We can make our playing be more continuous by also descending after we reach the highest note. The pattern is now 1515.
+      </p>
+      <p class="section-header">Sheet</p>
+      <p class="section-content">
+        Take a listen here. Note how we play the fifth note of each scale instead of resting.
+      </p>
+      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21429670/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+      <a class="credit" href="https://musescore.com/user/36979176/scores/21429670" target="_blank">
+        Styx helix – arpeggio 1515</a>
 
-
+      <p class="section-header">Piano roll</p>
+      <p class="section-content">Here's the equivalent piano roll version</p>
       <midi-player
-        src="midi/styxhelix_151.mid"
-        sound-font visualizer=".styxhelix_151_viz">
+        src="midi/styxhelix_1515.mid"
+        sound-font visualizer=".styxhelix_1515_viz">
       </midi-player>
-      <midi-visualizer class="styxhelix_151_viz" type="waterfall" 
-      src="midi/styxhelix_151.mid"></midi-visualizer>
-      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21423823/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-      <a class="credit" href="https://musescore.com/user/36979176/scores/21423823/s/WXlyO5" target="_blank">
-        Styx helix – arpeggio 151</a>
+      <midi-visualizer class="styxhelix_1515_viz" type="waterfall" 
+      src="midi/styxhelix_1515.mid"></midi-visualizer>
 
       <p class="section-header">Let’s practice!</p>
-      <p class="section-content">1. Do this for one song</p>
-      <p class="section-content">2. Do this for another song</p>
-    </div>
-
-    <!-- Section 2 -->
-    <div class="section" x-show="currentPage === 4">
-      <p class="section-header">Section 2: 1-5-1</p>
-      <midi-player
-        src="midi/styxhelix_151.mid"
-        sound-font visualizer=".styxhelix_151_viz">
-      </midi-player>
-      <midi-visualizer class="styxhelix_151_viz" type="waterfall"></midi-visualizer>
-      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21423823/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-      <a class="credit" href="https://musescore.com/user/36979176/scores/21423823/s/WXlyO5" target="_blank">
-        Styx helix – arpeggio 151</a>
+      <p class="section-content"><span class="practice-header">1. [Left]</span> Practice just the left hand in isolation. Make sure you can play the notes continuously.</p>
+      <p class="section-content"><span class="practice-header">2. [Left and right]</span> Practice with the right hand. Pay attention to which left and right hand notes have to be played at the same time.</p>
+      <p class="section-content"><span class="practice-header">3. [In tempo]</span>
+        Practice against the musescore recording, and make sure you can follow the same tempo without any mistakes.
+      </p>
+      <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another song.</p>
     </div>
 
 
-    <!-- Section 3 -->
-    <div class="section" x-show="currentPage === 3">
-      <p class="section-header">Section 3: 1-5-1</p>
-      <midi-player
-        src="midi/styxhelix_151.mid"
-        sound-font visualizer=".styxhelix_151_viz">
-      </midi-player>
-      <midi-visualizer class="styxhelix_151_viz" type="waterfall"></midi-visualizer>
-      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21423823/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-      <a class="credit" href="https://musescore.com/user/36979176/scores/21423823/s/WXlyO5" target="_blank">
-        Styx helix – arpeggio 151</a>
-    </div>
   
     <div class="navigation">
       <!-- Navigation buttons using Alpine.js bindings -->
