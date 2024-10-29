@@ -181,6 +181,44 @@
     <p class="section-content"><span class="practice-header">5. [Another song]</span> Repeat the above to another song.</p>
   </div>
 
+  <!-- Section: Level 5. Rhythm gaps -->
+  <div class="section" x-show="currentPage === 6">
+    <p class="section-header"> Level 5. Rhythm gaps</p>
+    <p class="section-content">
+      You can leave out some notes in your left hand if your right hand is playing a melody, and your playing will still sound continuous.
+      Heck, you can even play different patterns each time! 
+    </p>
+    <p class="section-header">Sheet</p>
+    <p class="section-content">
+      Note how leaving some space on the arpeggio when the right hand is playing can make the piece sound more interesting.
+      You still want to play the bass note regardless of the right hand to establish the chord though.
+    </p>
+    <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21429985/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+    <a class="credit" href="https://musescore.com/user/36979176/scores/21429985" target="_blank">
+      Styx helix – arpeggio rhythm gaps</a>
+
+    <p class="section-header">Piano roll</p>
+    <p class="section-content">Here's the equivalent piano roll version</p>
+    <midi-player
+      src="midi/styxhelix_rhythmgaps.mid"
+      sound-font visualizer=".styxhelix_rhythmgaps_viz">
+    </midi-player>
+    <midi-visualizer class="styxhelix_rhythmgaps_viz" type="waterfall" 
+    src="midi/styxhelix_rhythmgaps.mid"></midi-visualizer>
+
+    <p class="section-header">Let’s practice!</p>
+    <p class="section-content">
+    <p class="section-content"><span class="practice-header">1. [Left and right]</span> Practice with both hands. Pay close attention to which notes on both hands are played at the same time. </p>
+    <p class="section-content"><span class="practice-header">2. [New pattern]</span>
+      Sketch up a new pattern, while keeping the same rhtyhmic gaps. Practice that.
+    </p>
+    <p class="section-content"><span class="practice-header">3. [Improvise]</span> Keep looping this chorus, and see if you can pick gaps and notes for the left hand on the fly.
+      To be able to improvise, you must instinctively be able to identify the notes of the chords.
+      One way to get better at this is to practice chord inversions -- go find youtube tutorials on "chord inversions" and practice them first as a precursor step if you haven't done this before.
+    </p>
+    <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another song.</p>
+  </div>
+
     <div class="navigation">
       <!-- Navigation buttons using Alpine.js bindings -->
       <button x-bind:disabled="currentPage === 1" @click="changePage(currentPage-1)">← Previous</button>
