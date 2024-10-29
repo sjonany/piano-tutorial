@@ -26,6 +26,8 @@ body, html {
 }
 
 .pagination-container {
+    width: 100%; /* Full width */
+    max-width: 800px; /* Optional max width for larger screens */
     height: auto;
     display: flex;
     flex-direction: column;
