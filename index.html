@@ -105,7 +105,6 @@
       <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another song.</p>
     </div>
 
-
     <!-- Section: Level 3. Twice as fast -->
     <div class="section" x-show="currentPage === 4">
       <p class="section-header"> Level 3. Twice as fast</p>
@@ -147,6 +146,41 @@
       <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another song.</p>
     </div>
   
+   <!-- Section: Level 4. Beyond 135 -->
+   <div class="section" x-show="currentPage === 5">
+    <p class="section-header"> Level 4. Beyond 135</p>
+    <p class="section-content">
+      We can use more notes beyond the 135 of each scale. Some common ones that sound good are the 2, 6 and 7.
+      Here's an example where we also use the 2. 
+    </p>
+    <p class="section-header">Sheet</p>
+    <p class="section-content">
+      The pattern used here is 15123532. Doesn't the 123 walking movement sound good here?
+    </p>
+    <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21429772/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+    <a class="credit" href="https://musescore.com/user/36979176/scores/21429772" target="_blank">
+      Styx helix – arpeggio 15123532</a>
+
+    <p class="section-header">Piano roll</p>
+    <p class="section-content">Here's the equivalent piano roll version</p>
+    <midi-player
+      src="midi/styxhelix_1235.mid"
+      sound-font visualizer=".styxhelix_1235_viz">
+    </midi-player>
+    <midi-visualizer class="styxhelix_1235_viz" type="waterfall" 
+    src="midi/styxhelix_1235.mid"></midi-visualizer>
+
+    <p class="section-header">Let’s practice!</p>
+    <p class="section-content">
+    <p class="section-content"><span class="practice-header">1. [Left]</span> Practice just the left hand in isolation. Make sure you can play the notes continuously.</p>
+    <p class="section-content"><span class="practice-header">2. [Left and right]</span> Practice with the right hand. Pay attention to which left and right hand notes have to be played at the same time.</p>
+    <p class="section-content"><span class="practice-header">3. [In tempo]</span>
+      Practice against the musescore recording, and make sure you can follow the same tempo without any mistakes.
+    </p>
+    <p class="section-content"><span class="practice-header">4. [Another pattern]</span> Try other patterns! Here is another one: 15123575, or you can create your own too.</p>
+    <p class="section-content"><span class="practice-header">5. [Another song]</span> Repeat the above to another song.</p>
+  </div>
+
     <div class="navigation">
       <!-- Navigation buttons using Alpine.js bindings -->
       <button x-bind:disabled="currentPage === 1" @click="changePage(currentPage-1)">← Previous</button>
