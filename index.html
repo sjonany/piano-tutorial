@@ -19,10 +19,64 @@
 </head>
 
 <body>
-  <div class="pagination-container" x-data="{ currentPage: 1, totalPages: 3 }">
-
+  <div class="pagination-container" x-data="{ currentPage: 1, totalPages: 4 }">
     <!-- Section 1 -->
     <div class="section" x-show="currentPage === 1">
+      <p class="section-header">Arpeggio tutorial</p>
+      <p class="section-content">
+        This is a short tutorial on how you can create delicious arpeggio covers for your favorite songs.
+        I originally wrote this for my brother and he likes anime music, so I'm using that as the recurring song :D
+        <br/>
+        <br/>
+        Here's the end product:
+        TODO:
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dY3wO4u5mdA?si=Sp3pphmGALKjj2gc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section" x-show="currentPage === 2">
+      <p class="section-header">Level 1. 1-5-1</p>
+      <p class="section-content">
+        A basic starting pattern is to play the first (also known as root) and fifth note of the scale of the chord you are playing.
+        For example, for the chord C, the corresponding scale is C major, and the first note is C, third note is E, and fifth note is G.
+      </p>
+      <p class="section-header">Sheet</p>
+      <p class="section-content">
+        Take a listen here. Note how the left hand only plays 3 quarter notes then pauses for each chord.
+        Do you see that all the left hand is doing is just the 1-5-1 pattern?
+      </p>
+
+      <iframe width="100%" height="394" src="https://musescore.com/user/36979176/scores/21423823/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+      <a class="credit" href="https://musescore.com/user/36979176/scores/21423823/s/WXlyO5" target="_blank">
+        Styx helix – arpeggio 151</a>
+
+      <p class="section-header">Piano roll</p>
+      <p class="section-content">Here's the equivalent piano roll version</p>
+      <midi-player
+        src="midi/styxhelix_151.mid"
+        sound-font visualizer=".styxhelix_151_viz">
+      </midi-player>
+      <midi-visualizer class="styxhelix_151_viz" type="waterfall" 
+      src="midi/styxhelix_151.mid"></midi-visualizer>
+
+      <p class="section-header">Let’s practice!</p>
+      <p class="section-content">The lessons build up on top of each other, so it's important to master each before going to the next. Here are some suggested practice goals:</p>
+      <p class="section-content"><span class="practice-header">1. [Left]</span> Practice just the left hand in isolation. Make sure you know the 1's and 5's of each chord.</p>
+      <p class="section-content"><span class="practice-header">2. [Left and right]</span> Practice with the right hand. Pay attention to which left and right hand notes have to be played at the same time.</p>
+      <p class="section-content"><span class="practice-header">3. [In tempo]</span> Practice against the muse score recording, and make sure you can follow the same tempo without any mistakes.
+        In the "Sheet" section, the musescore widget allows looping. Set "end measure" to 4.</p>
+      <p class="section-content"><span class="practice-header">4. [Another song]</span> Repeat the above to another song.
+        Pick one song that you know the chords of (or if you don't, you can use
+        <a href="https://tabs.ultimate-guitar.com/tab/misc-computer-games/final-fantasy-x-to-zanarkand-chords-1505174">
+          ultimate guitar</a>
+        and see if you can play the song using this pattern.
+      </p>
+    </div>
+
+
+    <!-- Section 1 -->
+    <div class="section" x-show="currentPage === 3">
       <p class="section-header">Section 1: 1-5-1</p>
       <p class="section-content">Here's the lesson content</p>
 
@@ -37,16 +91,13 @@
       <a class="credit" href="https://musescore.com/user/36979176/scores/21423823/s/WXlyO5" target="_blank">
         Styx helix – arpeggio 151</a>
 
-      <p class="practice-header">Let’s practice!</p>
-      <ol class="section-content">
-        <li>Do this for one song</li>
-        <li>Do this for two songs</li>
-        <li>Repeat until comfortable</li>
-      </ol>
+      <p class="section-header">Let’s practice!</p>
+      <p class="section-content">1. Do this for one song</p>
+      <p class="section-content">2. Do this for another song</p>
     </div>
 
     <!-- Section 2 -->
-    <div class="section" x-show="currentPage === 2">
+    <div class="section" x-show="currentPage === 4">
       <p class="section-header">Section 2: 1-5-1</p>
       <midi-player
         src="midi/styxhelix_151.mid"
