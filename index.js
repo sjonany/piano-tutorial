@@ -45,6 +45,9 @@ function pagination() {
             const newUrl = `${window.location.pathname}?page=${newPage}`;
             // Change the URL as well so user can bookmark.
             history.pushState({}, '', newUrl);
+
+            // Scroll to top of the page
+            $('body').scrollTop(0);
         },
 
         handleKeydown(event) {
